@@ -2,10 +2,32 @@
     --header_height: 60px;
 }
 
+.all {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+/*общие стили сообщений*/
 .hw {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    position: relative;
 
 }
 
+/*стили title Готово*/
 .hwTitle {
-
+    display: flex;
+    position: relative;
+    width: 165px;
+    margin-top: 107px;
+    margin-left: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 }

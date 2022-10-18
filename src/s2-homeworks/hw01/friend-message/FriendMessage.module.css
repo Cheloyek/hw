@@ -1,31 +1,95 @@
+
+/*стили получаемого сообщения - слева*/
 .friendMessage {
-
+    /*margin-right: 27px;*/
+    display: flex;
+    flex-direction: column; /*элементы в колонку*/
+    position: relative; /*положение элементов относительно других*/
+    margin-left: 70px; /*отступ слева*/
+    /*flex-direction: row;*/
+    /*font-family: 'Montserrat';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*font-size: 16px;*/
+    /*line-height: 20px;*/
+    /*background-color: #0066CC;*/
+    /*color: #000000;*/
+    /*border: 1px solid #00cc22;*/
+    /*margin-top: 47px;*/
+    /*width: 414px;*/
+    /*!*margin: 43px 118px 10px;*!*/
+    /*!*margin-top: 168px;*!*/
+    /*!*margin-right: 118px;*!*/
+    /*border-radius: 0.5rem;*/
 }
 
+/*блок img и text*/
 .friendImageAndText {
+    display: flex;
+    position: relative;
+    justify-content:flex-start; /*расположение блока слева*/
+    margin-top: 47px; /*отступ сверху*/
 
 }
 
+/*img*/
 .friendImageAndText img {
-
+    width: 48px;
+    height: 48px;
+    left: 1162px;
+    top: 180px;
 }
 
+/*text и name*/
 .friendText {
-
+    position: relative;
+    border: 1px solid #f3f5fa; /*границы блока*/
+    background-color: #f5f7fb;
+    margin-left: 10px; /*отступ слева*/
+    border-radius: 0.5rem; /*радиус границы*/
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1); /*тень*/
+    padding: 0 13px; /*отступ слева и справа*/
+    flex-direction: column; /*колонки text и name*/
+    justify-content: start;
+    order: 2;
 }
 
+/*хвостик сообщения*/
 .friendText:after {
-
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 100%;
+    transform: translateX(10px);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at top left, transparent 70%, #f3f5fa 0) no-repeat right bottom;
 }
 
+/*Friend name текст*/
 .friendName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    }
 
-}
-
+/*message text*/
 .friendMessageText {
-
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400; /*толщина текста*/
+    margin-top: 4px;
 }
 
+/*time*/
 .friendTime {
-
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 48px;
+    margin-top: 5px;
 }

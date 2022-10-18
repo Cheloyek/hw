@@ -1,13 +1,43 @@
-.sendForm {
 
+/*общая форма sendForm*/
+.sendForm {
+    display: flex;
+    flex-direction: row; /*расположение flex элементов в строку (textarea и button*/
+    position: relative; /*расположение относительно flex элементов*/
+    margin-top: 73px; /*отступ сверху*/
+    margin-left: 70px; /*отступ слева*/
+    /*background: #7dde07;*/
+    justify-content:flex-start /*расположение элементов - привяжет к левому краю блока*/
 }
 
+/*textarea*/
 .textarea {
-
+    position: relative;
+    background-color: #f3f5fa; /*цвет background textarea*/
+    border-color: #f3f5fa; /*цвет границ textarea*/
+    resize: none;          /*размер textarea - не изменяться, убирает значек изменения размера*/
+    /*height: 170px;*/
+    width: 976px; /*ширина textarea*/
+    min-height: 70px; /*высота textarea*/
+    border-radius: 20px; /*радиус границ textarea*/
+    /*text-align: start;*/
+    padding-left: 10px; /*отступ слева*/
+    padding-top: 25px; /*отступ сверху*/
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1); /*тень*/
 }
 
 .button {
-
+    position: relative;
+    width: 120px; /*ширина*/
+    height: 40px; /*высота*/
+    /*left: 1020px;*/
+    /*top: -20px;*/
+    margin-left: 44px; /*отступ слева от texarea*/
+    background: #0066CC;
+    border-color: #0066cc;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1); /*тень*/
 }
 
 .button:hover {

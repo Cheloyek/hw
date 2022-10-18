@@ -18,7 +18,7 @@ const Message = (props: MessagePropsType) => {
                     src={props.message.user.avatar}
                     //
                 />
-                <img src="" alt=""/>
+                {/*<img src="" alt=""/>*/}
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
@@ -34,7 +34,7 @@ const Message = (props: MessagePropsType) => {
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {/*создаёт студент*/}
-
+                    09:00
                 {/**/}
             </div>
         </div>

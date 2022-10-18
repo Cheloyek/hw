@@ -1,31 +1,89 @@
+
+
+
+/*стили отправляемого сообщения - справа*/
 .message {
-
+    margin-right: 70px; /*отступ сообщения справа*/
+    display: flex;
+    flex-direction: column; /*расположение name и text в колонку */
+    position: relative;
+    justify-content: right; /*привязка отправляемого сообщения справа*/
 }
 
+/*блок img и text*/
 .imageAndText {
-
+    display: flex;
+    position: relative;
+    justify-content: right;
+    margin-top: 47px;
+    flex-direction: row-reverse; /*развернет элементы text-img*/
+    margin-left: 100px;
 }
 
+/*img */
 .imageAndText img {
-
+    /*display: flex;*/
+    width: 48px;
+    height: 48px;
+    left: 1162px;
+    top: 180px;
+    margin-left: 10px;
 }
 
+/*text и name*/
 .text {
-
+    position: relative;
+    border: 1px solid #0065cb;
+    background-color: #0065cb;
+    margin-left: 10px;
+    border-radius: 0.5rem; /*радиус границы*/
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1); /*тень*/
+    padding: 0 13px; /*отступ слева и справа*/
+    flex-direction: column;
+    justify-content: start;
+    order: 2;
 }
 
+/*хвостик сообщения*/
 .text:after {
-
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 98%;
+    transform: translateX(0px);
+    rotate: 100grad;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at top left, transparent 70%, #0065cb 0) no-repeat right bottom;
 }
 
+/*Name*/
 .name {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; /*цвет имени*/
+    text-align: right; /*привяжет имя справа блока*/
 }
 
+/*message text*/
 .messageText {
-
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4px; /*отступ сверху*/
+    color: #fdfdfe;
 }
 
+/*time Готово*/
 .time {
-
+    display: flex;
+    position: relative;
+    justify-content: right; /*привязка справа*/
+    align-items: center;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 11px;
 }
