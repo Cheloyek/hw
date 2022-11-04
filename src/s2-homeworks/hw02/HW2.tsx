@@ -5,13 +5,13 @@ import {constants} from "os";
 //import priority = module
 
 /*
-* 1 - описать типы AffairPriorityType, AffairType OK
-* 2 - указать нужный тип для defaultAffairs OK
-* 3 - дописать типы и логику функции filterAffairs и проверить её тестами OK
-* 4 - выполнить пункт 3 для функции deleteAffair OK
-* 5 - указать нужный тип в useState с affairs OK
-* 6 - дописать тип и логику функции deleteAffairCallback OK
-* 7 - в файле Affairs.tsx дописать типизацию пропсов OK
+* 1 - описать типы AffairPriorityType, AffairType
+* 2 - указать нужный тип для defaultAffairs
+* 3 - дописать типы и логику функции filterAffairs и проверить её тестами
+* 4 - выполнить пункт 3 для функции deleteAffair
+* 5 - указать нужный тип в useState с affairs
+* 6 - дописать тип и логику функции deleteAffairCallback
+* 7 - в файле Affairs.tsx дописать типизацию пропсов
 * 8 - в файле Affairs.tsx дописать логику функций setAll, setHigh, setMiddle, setLow
 * 9 - в файле Affair.tsx дописать типизацию пропсов
 * 10 - в файле Affair.tsx дописать функции deleteCallback и использовать
@@ -63,6 +63,7 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all') //
 
     const filteredAffairs = filterAffairs(affairs, filter)
+    console.log(filteredAffairs,"-filteredAffairs")
     // const deleteAffairCallback = (_id: any) => { //8 need to fix any
     const deleteAffairCallback = (_id: number) => { // need to fix any
         setAffairs(deleteAffair(affairs, _id))
@@ -71,7 +72,9 @@ function HW2() {
 
     return (
         <div id={'hw2'}>
+            <hr/>
             <div className={s2.hwTitle}>Homework #2</div>
+            <hr/>
             <div className={s2.hw}>
                 <Affairs
                     data={filteredAffairs}
@@ -80,6 +83,7 @@ function HW2() {
                     filter={filter}
                 />
             </div>
+            <hr/>
         </div>
     )
 }

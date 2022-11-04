@@ -1,16 +1,12 @@
 import React from 'react'
 import Affair from './affair/Affair'
-import {AffairType, filterAffairs, FilterType} from '../HW2'
+import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 import affair from "./affair/Affair";
 
 type AffairsPropsType = {
-    // data: any // need to fix any
-    data: Array<AffairType> // need to fix any
-    // setFilter: any
+    data: Array<AffairType>
     setFilter: (priority: FilterType) => void
-    // deleteAffairCallback: any
-    // deleteAffairCallback: any
     deleteAffairCallback: (_id: number) => void
     filter: FilterType
 }
@@ -40,7 +36,7 @@ function Affairs(props: AffairsPropsType) {
 
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair
-            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+            key={a._id}
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
