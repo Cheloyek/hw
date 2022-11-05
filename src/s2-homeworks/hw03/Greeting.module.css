@@ -5,6 +5,7 @@
 }
 
 .error {
+    color: #cc0000;
 }
 
 .input {
@@ -32,4 +33,8 @@
 }
 
 .greeting {
+}
+
+.errorInput {
+    border-color: #cc0000;
 }
