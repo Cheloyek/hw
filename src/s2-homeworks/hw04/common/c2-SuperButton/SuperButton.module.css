@@ -1,36 +1,116 @@
 .button {
+    height: 30px;
+    width: 132px;
+    text-decoration-color: #FFFFFF;
 }
 
 .disabled {
+    height: 30px;
+    width: 132px;
+    background-color: #004D99;
+    opacity: 0.5;
+    text-decoration-color: #002E5C;
+    font-size: 14px;
+    font-weight: 600;
+    color: #002E5C;
 }
 
 .secondary {
+    background-color: #FFFFFF;
+    border-color: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #0066CC;
+    width: 167px;
+    flex-grow: 0;
+    order: 0;
 }
 
 .default {
+    background-color: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 132px;
+    border: none;
 }
 
 .red {
+    background-color: #CC1439;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
 }
 
 .default:hover {
+    background-color: #0080FF;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 149px;
+    border: none;
 }
 
 .red:hover {
+    background-color: #FF1A47;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 167px;
+    border: none;
 }
 
 .secondary:hover {
+    background-color: #E5F0FA;
+    border-color: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #0066CC;
+    width: 167px;
+    flex-grow: 0;
+    order: 0;
 }
 
 
 .default:active {
+    background-color: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 149px;
+    border: none;
 }
 
 .secondary:active {
+    background-color: #C9E5FF;
+    border-color: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #0066CC;
+    width: 149px;
+    flex-grow: 0;
+    order: 0;
 }
 
 .red:active {
+    background-color: #CC1439;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 167px;
+    border: none;
 }
 
 .button:disabled {
+
 }

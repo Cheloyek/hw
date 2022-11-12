@@ -20,4 +20,9 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+    margin-right: 106px;
+}
+
+.default {
+    background-color: #0066CC;
 }
