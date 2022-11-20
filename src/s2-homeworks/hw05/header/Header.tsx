@@ -23,14 +23,19 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                     : 'Error'
     return (
         <>
-            <div id={'hw5-header'} className={s.header}>
-                <img
-                    src={burgerIcon}
-                    id={'hw5-burger-menu'}
-                    className={s.burgerMenuIcon}
-                    onClick={handleOpen}
-                    alt={'open menu'}
-                />
+            <div>
+                <div id={'hw5-header'} className={s.header}>
+                    <span>
+                    <img
+                        src={burgerIcon}
+                        id={'hw5-burger-menu'}
+                        className={s.burgerMenuIcon}
+                        onClick={handleOpen}
+                        alt={'open menu'}
+                    />
+                </span>
+                    <span className={s.title}>Hometask №5</span>
+                </div>
                 <h1>{pageName}</h1>
             </div>
         </>
